@@ -6,7 +6,7 @@ def get_weather(city):
     return {'city': city, 'temperature': 25, 'condition': "Sunny"}
 
 def format_weather(weather_data):
-    return "The weather in " + weather_data['city'] + " is " + weather_data['temperature'] + "°C with " + weather_data['condition'] + " conditions."
+    return "The weather in " + weather_data['city'] + " is " + str(weather_data['temperature']) + "°C with " + weather_data['condition'] + " conditions."
 
 # Example usage (contains deliberate issues)
 weather_data = get_weather("Sydney")
